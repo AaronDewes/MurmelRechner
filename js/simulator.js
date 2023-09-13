@@ -23,7 +23,7 @@ function executeLine() {
   // setup pointer
   const pointer = document.getElementById('pointer');
 
-  const content = code[line - 1];
+  const content = code[line];
   const cmd = content.substring(0, 3);
   const param = parseInt(content.substring(3, content.length));
 
