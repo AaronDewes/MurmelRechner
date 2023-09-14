@@ -29,7 +29,7 @@ function executeLine() {
 
   // set pointer to line
   const lines = document.getElementById('editing').value.split('\n');
-  let linesOfCode = 0;
+  let linesOfCode = -1;
 
   for (let i = 0; i < lines.length; i++) {
     const lineContent = lines[i];
