@@ -35,7 +35,7 @@ function executeLine() {
     const lineContent = lines[i];
     if (lineContent != '') linesOfCode++; // check if this line is code
     if (linesOfCode-1  == line) {
-      pointer.style.top = i * 20 - 4 + 'pt';
+      pointer.style.top = (i - 1) * 20 - 4 + 'pt';
       break;
     }
   }
