@@ -29,12 +29,12 @@ function executeLine() {
 
   // set pointer to line
   const lines = document.getElementById('editing').value.split('\n');
-  let linesOfCode = -1;
+  let linesOfCode = 0;
 
   for (let i = 0; i < lines.length; i++) {
     const lineContent = lines[i];
     if (lineContent != '') linesOfCode++; // check if this line is code
-    if (linesOfCode == line) {
+    if (linesOfCode-1  == line) {
       pointer.style.top = i * 20 - 4 + 'pt';
       break;
     }
