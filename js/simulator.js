@@ -34,8 +34,8 @@ function executeLine() {
   for (let i = 0; i < lines.length; i++) {
     const lineContent = lines[i];
     if (lineContent != '') linesOfCode++; // check if this line is code
-    if (linesOfCode-1  == line) {
-      pointer.style.top = (i - 1) * 20 - 4 + 'pt';
+    if (linesOfCode - 1  == line) {
+      pointer.style.top = i * 20 - 4 + 'pt';
       break;
     }
   }
